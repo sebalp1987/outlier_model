@@ -18,6 +18,7 @@ def global_main():
     os.chdir(STRING.path_processing)
     df_test = pd.read_csv('batch_files\\new_claims.csv', sep=';', encoding='latin1')
     df = pd.read_csv('batch_files\\training_claims.csv', sep=';', encoding='latin1')
+
     #######################################################################################################################
 
     # We delete future variables to avoid endogeneity, and non-numeric variables
