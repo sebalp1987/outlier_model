@@ -5,7 +5,7 @@ FRAUD INSURANCE-CLAIMS DETECION MODEL
 Please, write to sebastian.mauricio.palacio@zurich.com
 
 ## Data
-Database is composed by several raw and big size files. We made all the necessary transformations and sanitization, but also the final table is more > 1GB. If you want to look at it do not hesitate to contact us.
+Database is composed by several raw and big size files. We made all the necessary transformations and sanitization, but also the final table is more > 1GB. If you want to look at it do not hesitate to contact us, we will provide it using Google Drive.
 
 ## Preprocessing
 This version is a simplified one. Here it is only the model application. All the preprocessing modules were retired because of simplicity. Again, do not hesitate to contact us if you want to take a look to it. Also you can take a look to the [DOCUMENTATION.docx](CHANGELOG) file annexed. Take into account that this is a very preliminary version.
