@@ -12,7 +12,7 @@ This version is a simplified one. Here it is only the model application. All the
 
 ## Requerimentes
 
-You need Python 3.6 or later to run the model. You can check the configuration [setup](setup.CFG) file for the package requeriments. 
+You need Python 3.6 or later to run the model. You can check the configuration [setup](setup.cfg) file for the package requeriments. 
 
 ## Quick Start
 
