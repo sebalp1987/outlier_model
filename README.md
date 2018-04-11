@@ -1,13 +1,14 @@
-# Z-FINDER: FRAUD INSURANCE-CLAIMS DETECION RESEARCH
+FRAUD INSURANCE-CLAIMS DETECION MODEL
 
 ## Got a question?
 
 Please, write to sebastian.mauricio.palacio@zurich.com
 
-## What is Z-FINDER?
+## Data
+Database is composed by several raw and big size files. We made all the necessary transformations and sanitization, but also the final table is more > 1GB. If you want to look at it do not hesitate to contact us.
 
-Z-FINDER is a fraud detection model for Python created in Zurich Insurance Lta - Spain. It brings
-probabilities of fraud behaviour using Semi-Supervised Machine Learning algorithms.
+## Preprocessing
+This version is a simplified one. Here it is only the model application. All the preprocessing modules were retired because of simplicity. Again, do not hesitate to contact us if you want to take a look to it. Also you can take a look to the [DOCUMENTATION.docx](CHANGELOG\DOCUMENTATION.docx) file annexed. Take into account that this a very preliminary version.
 
 ## Requerimentes
 
@@ -23,7 +24,7 @@ $ python main.py
 
 ## IDE Integrations
 
-Z-FINDER can be integrated into popular IDEs:
+The model can be integrated into popular IDEs:
 
 * PyCharm: [PyCharm](https://www.jetbrains.com/pycharm/)
 
@@ -67,6 +68,5 @@ Please report any bugs and enhancement ideas to:
 * **Sebastián Mauricio Palacio** - [mailbox](sebastian.mauricio.palacio@zurich.com)
 
 ## License
-
 Z-FINDER is licensed under the terms of Zurich Insurance Lta, Spain. See the [LICENSE.md](LICENSE.md) file for details
 
