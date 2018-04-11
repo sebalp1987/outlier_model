@@ -8,11 +8,11 @@ Please, write to sebastian.mauricio.palacio@zurich.com
 Database is composed by several raw and big size files. We made all the necessary transformations and sanitization, but also the final table is more > 1GB. If you want to look at it do not hesitate to contact us.
 
 ## Preprocessing
-This version is a simplified one. Here it is only the model application. All the preprocessing modules were retired because of simplicity. Again, do not hesitate to contact us if you want to take a look to it. Also you can take a look to the [DOCUMENTATION.docx](CHANGELOG) file annexed. Take into account that this a very preliminary version.
+This version is a simplified one. Here it is only the model application. All the preprocessing modules were retired because of simplicity. Again, do not hesitate to contact us if you want to take a look to it. Also you can take a look to the [DOCUMENTATION.docx](CHANGELOG) file annexed. Take into account that this is a very preliminary version.
 
 ## Requerimentes
 
-You need Python 3.6 or later to run Z-FINDER. Also you need Pandas, Numpy and Sklearn libraries.
+You need Python 3.6 or later to run the model. You can check the configuration [setup](setup.CFG) file for the package requeriments. 
 
 ## Quick Start
 
@@ -44,16 +44,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
 
-## [0.0.1] - 2017-06-20
+## [0.0.1] - 2018-02-26
 ### Added
 -Se agrega el archivo combinado de prob_normalized y checklist
 ### Removed
 -Se eliminan los archivos prob_normalized y checklist
 ### Changed
 -Se modifican los puntos por decimales a miles y los miles a decimales de los outputs de la oficina de Fraude.
-### Fixed
-### Deprecated
-### Security
+
 
 
 
