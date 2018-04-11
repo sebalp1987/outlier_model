@@ -66,5 +66,5 @@ Please report any bugs and enhancement ideas to:
 * **Sebastián Mauricio Palacio** - [mailbox](sebastian.mauricio.palacio@zurich.com)
 
 ## License
-Z-FINDER is licensed under the terms of Zurich Insurance Lta, Spain. See the [LICENSE.md](LICENSE.md) file for details
+The Fraud Model is licensed under the terms of Zurich Insurance Lta, Spain. See the [LICENSE.md](LICENSE.md) file for details
 
