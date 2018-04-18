@@ -3,6 +3,7 @@ from sklearn.feature_selection import VarianceThreshold
 import numpy as np
 import matplotlib.pyplot as plot
 
+
 class process_utils:
 
     def variance_threshold(self: pd.DataFrame, cp, fecha, threshold=0.0):

@@ -332,7 +332,7 @@ def global_main():
                                                  oob_score=oob_score,
                                                  class_weight=class_weight,
                                                  sampling=base_sampling,
-                                                 label=selected_label, beta=2, create_folder=True)
+                                                 label=selected_label, beta=2)
     print('MODELO CONTROL THRESHOLD')
     final_tresh_control = ert.extreme_randomize_treshold(train_t.copy(), valid_t.copy(), test_t.copy(), comparative.copy(), bootstrap=bootstrap,
                                                  n_estimators=n_estimators,
@@ -340,7 +340,7 @@ def global_main():
                                                  oob_score=oob_score,
                                                  class_weight=class_weight,
                                                  sampling=control_sampling,
-                                                 label=selected_label, beta=2, create_folder=False)
+                                                 label=selected_label, beta=2)
 
     '''
     final_tresh_lightgb = lgb.lightgb_treshold(train_t, valid_t, test_t, comparative, num_leaves, n_estimators_lgb, max_bin, sampling_lgb,
