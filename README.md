@@ -1,4 +1,5 @@
 FRAUD INSURANCE-CLAIMS DETECION MODEL
+Results based on the paper: https://ideas.repec.org/p/xrp/wpaper/xreap2018-2.html
 
 ## Got a question?
 
