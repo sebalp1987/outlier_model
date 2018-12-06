@@ -4,7 +4,7 @@
 Please, write to sebastian.mpalacio@gmail.com
 
 ## Data
-Database is composed by several raw and big size files. We made all the necessary transformations and sanitization. You can find it in the Mandely repository https://data.mendeley.com/datasets/g3vxppc8k4/1. Note: As it is a real dataset all data is masked.
+Database is composed by several raw and big size files. We made all the necessary transformations and sanitization. You can find it in the Mandely repository https://data.mendeley.com/datasets/g3vxppc8k4/2. Note: As it is a real dataset all data is masked.
 
 ## Preprocessing
 This version is a simplified one. Here it is only the model application. All the preprocessing modules were retired because of simplicity. Again, do not hesitate to contact us if you want to take a look to it. 
