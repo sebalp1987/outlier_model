@@ -15,7 +15,7 @@ setup(
 
 
     author="Sebastián Mauricio Palacio",
-    author_email="sebastian.mauricio.palacio@everis.com",
+    author_email="sebastian.mpalacio@gmail.com",
     description="Detecting Insurance Claims Fraud algorithms",
     license="PSF",
     keywords="insurance fraud claim detection machine learning",
