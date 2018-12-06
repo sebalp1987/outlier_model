@@ -56,14 +56,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
 ## Authors
 
-* **Sebastián Mauricio Palacio** - *Initial work* - [mailbox](sebastian.mauricio.palacio@zurich.com)
+* **Sebastián Mauricio Palacio** - *Initial work* - [mailbox](sebastian.mpalacio@gmail.com)
 
 ## Issue Tracker
 
 Please report any bugs and enhancement ideas to:
 
-* **Sebastián Mauricio Palacio** - [mailbox](sebastian.mauricio.palacio@zurich.com)
-
-## License
-The Fraud Model is licensed under the terms of Zurich Insurance Lta, Spain. See the [LICENSE](LICENSE) file for details
+* **Sebastián Mauricio Palacio** - [mailbox](sebastian.mpalacio@gmail.com)
 
