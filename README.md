@@ -1,9 +1,7 @@
-FRAUD INSURANCE-CLAIMS DETECION MODEL
-Results based on the paper: https://ideas.repec.org/p/xrp/wpaper/xreap2018-2.html
 
 ## Got a question?
 
-Please, write to sebastian.mauricio.palacio@zurich.com
+Please, write to sebastian.mpalacio@gmail.com
 
 ## Data
 Database is composed by several raw and big size files. We made all the necessary transformations and sanitization. You can find it in the Mandely repository https://data.mendeley.com/datasets/g3vxppc8k4/1. Note: As it is a real dataset all data is masked.
