@@ -43,9 +43,6 @@ def over_sampling(xTrain, yTrain, model='ADASYN', neighbors=200):
     :return: xTrain and yTrain oversampled
     """
 
-    xTrainNames = xTrain.columns.values.tolist()
-    yTrainNames = yTrain.columns.values.tolist()
-
     if model == 'ADASYN':
         model = ADASYN(random_state=42, ratio='minority', n_neighbors=neighbors)
 
@@ -53,9 +50,6 @@ def over_sampling(xTrain, yTrain, model='ADASYN', neighbors=200):
         model = SMOTE(random_state=42, ratio='minority', k_neighbors=neighbors, m_neighbors='svm')
 
     xTrain, yTrain = model.fit_sample(xTrain, yTrain)
-
-    xTrain = pd.DataFrame(xTrain, columns=[xTrainNames])
-    yTrain = pd.DataFrame(yTrain, columns=[yTrainNames])
 
     return xTrain, yTrain
 
@@ -82,3 +76,27 @@ def under_sampling(xTrain, yTrain, neighbors=200):
     yTrain = pd.DataFrame(yTrain, columns=[yTrainNames])
 
     return xTrain, yTrain
+
+
+def oversample_unsupervised(normal, anomaly):
+    X = pd.concat([normal, anomaly], axis=0)
+    X = X.copy()
+    X = X.reset_index(drop=True)
+    Y_fraude = X[['FRAUDE']]
+    id_claims = X[['id_siniestro']]
+    del X['id_siniestro']
+    del X['FRAUDE']
+    xTrain_name = X.columns.values.tolist()
+    xTrain, yTrain = over_sampling(X, Y_fraude, model='SMOTE')
+    print(xTrain)
+    print(yTrain)
+    xTrain = pd.DataFrame(xTrain, columns=xTrain_name)
+    yTrain = pd.DataFrame(yTrain, columns=['FRAUDE'])
+    yTrain = pd.concat([yTrain, xTrain], axis=1)
+    print(yTrain)
+    yTrain = pd.concat([yTrain, id_claims], axis=1)
+    yTrain['id_siniestro'] = yTrain['id_siniestro'].fillna(-1)
+    normal = yTrain[yTrain['FRAUDE'] == 0]
+    anomaly = yTrain[yTrain['FRAUDE'] == 1]
+
+    return normal, anomaly

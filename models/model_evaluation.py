@@ -11,7 +11,7 @@ import numpy as np
 import os
 import time
 import STRING
-
+from utils.model_utils import oversample_unsupervised
 
 '''
 # FILES
@@ -151,9 +151,13 @@ def mean_shift_tunning(normal_df, anormal_df, oversample_times, max_quantile=0.9
 
 
 # MINI BATCH KMEANS
-def mini_batch_kmeans_tunning(normal_df, anormal_df, oversample_times, max_iter=301, batch_size=1001, n_clusters=10):
+def mini_batch_kmeans_tunning(normal_df: pd.DataFrame, anormal_df: pd.DataFrame, oversample_times, max_iter=5001,
+                              batch_size=10001, n_clusters=10):
+    if oversample_times is None:
+        normal_df, anormal_df = oversample_unsupervised(normal_df, anormal_df)
 
-    anormal_df = anormal_df.append([anormal_df] * oversample_times, ignore_index=True)
+    else:
+        anormal_df = anormal_df.append([anormal_df] * oversample_times, ignore_index=True)
     fraud_list_score = []
     i = 0
     for iter in np.arange(100, max_iter, 100):
